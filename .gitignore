@@ -1,0 +1,19 @@
+Pega esto:
+```
+# Datos sensibles - NUNCA subir
+data/config.php
+data/config-internal.php
+data/config-log.php
+data/*.php
+data/upload/
+data/logs/
+data/tmp/
+data/cache/
+
+# Dependencias - muy pesado
+vendor/
+
+# Sistema
+.env
+*.log
+node_modules/

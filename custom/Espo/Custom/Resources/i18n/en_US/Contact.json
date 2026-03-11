@@ -1,0 +1,53 @@
+{
+    "fields": {
+        "cNombreComercial": "test 1",
+        "cDenominacinSocial": "test 2",
+        "cNIFCIF": "NIF/CIF",
+        "cTipoDeEmpresa": "Tipo de Empresa",
+        "cCdigoPostal": "Código Postal",
+        "cPoblacin": "Población",
+        "cProvincia": "Provincia",
+        "cTipoDeVa": "Tipo de Vía",
+        "cDomicilio": "Domicilio",
+        "cNmero": "Número",
+        "cOtrosDatos": "Otros datos",
+        "cSector": "Sector",
+        "cActividad": "Actividad",
+        "cWeb": "Web",
+        "cTieneInstagram": "¿Tiene Instagram?",
+        "cInstagram": "Instagram",
+        "cNombreDeCliente": "Nombre de cliente",
+        "cPersonaDeContactos": "Persona De Contactos"
+    },
+    "options": {
+        "cTipoDeEmpresa": {
+            "A": "A",
+            "B": "B",
+            "C": "C",
+            "D": "D",
+            "F": "F",
+            "G": "G"
+        },
+        "cTipoDeVa": {
+            "Calle": "Calle",
+            "Avenida": "Avenida",
+            "Plaza": "Plaza",
+            "Paseo": "Paseo",
+            "Carretera": "Carretera",
+            "Camino": "Camino",
+            "Polígono": "Polígono",
+            "Otro": "Otro"
+        },
+        "cSector": {
+            "Administración": "Administración",
+            "Asociaciones": "Asociaciones",
+            "Educación": "Educación",
+            "Empresas": "Empresas",
+            "Turismo": "Turismo",
+            "Particulares": "Particulares"
+        }
+    },
+    "links": {
+        "cPersonaDeContactos": "Persona De Contactos"
+    }
+}

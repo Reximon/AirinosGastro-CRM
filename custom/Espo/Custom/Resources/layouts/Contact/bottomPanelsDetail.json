@@ -1,0 +1,27 @@
+{
+    "activities": {
+        "disabled": true
+    },
+    "history": {
+        "disabled": true
+    },
+    "_delimiter_": {
+        "disabled": true
+    },
+    "cPersonaDeContactos": {
+        "index": 0
+    },
+    "stream": {
+        "sticked": false,
+        "index": 1
+    },
+    "opportunities": {
+        "index": 2
+    },
+    "cases": {
+        "index": 3
+    },
+    "targetLists": {
+        "index": 4
+    }
+}

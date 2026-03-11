@@ -1,0 +1,256 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "emailAddress"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": true,
+    "fields": {
+        "cDenominacinSocial": {
+            "type": "varchar",
+            "maxLength": 155,
+            "copyToClipboard": true,
+            "options": [],
+            "isCustom": true
+        },
+        "cNIFCIF": {
+            "type": "varchar",
+            "maxLength": 10,
+            "default": "B00000000",
+            "options": [],
+            "isCustom": true
+        },
+        "cTipoDeEmpresa": {
+            "type": "enum",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "F",
+                "G"
+            ],
+            "style": {
+                "A": null,
+                "B": null,
+                "C": null,
+                "D": null,
+                "F": null,
+                "G": null
+            },
+            "default": "A",
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cCdigoPostal": {
+            "type": "varchar",
+            "maxLength": 5,
+            "options": [],
+            "isCustom": true
+        },
+        "cPoblacin": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cProvincia": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cTipoDeVa": {
+            "type": "enum",
+            "options": [
+                "Calle",
+                "Vía",
+                "Avenida",
+                "Plaza",
+                "Paseo",
+                "Carretera",
+                "Camino",
+                "Polígono",
+                "Parque",
+                "Otro"
+            ],
+            "style": {
+                "Calle": null,
+                "Vía": null,
+                "Avenida": null,
+                "Plaza": null,
+                "Paseo": null,
+                "Carretera": null,
+                "Camino": null,
+                "Polígono": null,
+                "Parque": null,
+                "Otro": null
+            },
+            "default": "Calle",
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cDomicilio": {
+            "type": "varchar",
+            "maxLength": 155,
+            "copyToClipboard": true,
+            "options": [],
+            "isCustom": true
+        },
+        "cNumero": {
+            "type": "varchar",
+            "maxLength": 50,
+            "options": [],
+            "isCustom": true
+        },
+        "cOtrosDatos": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cSector": {
+            "type": "enum",
+            "options": [
+                "Administración",
+                "Asociaciones",
+                "Empresas",
+                "Turismo",
+                "Particulares",
+                "Otros"
+            ],
+            "style": {
+                "Administración": null,
+                "Asociaciones": null,
+                "Empresas": null,
+                "Turismo": null,
+                "Particulares": null,
+                "Otros": null
+            },
+            "default": "Administración",
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cActividad": {
+            "type": "enum",
+            "options": [
+                "Ayuntamientos",
+                "Diputaciones",
+                "Xunta de Galicia",
+                "Organismos Colaboradores",
+                "Embajadas",
+                "Empresariales",
+                "Territoriales",
+                "Sectoriales",
+                "Denominaciones Origen",
+                "Indicación Geográfrica Protegida",
+                "Colegios Públicos",
+                "Colegios Concertados",
+                "Colegios Privados",
+                "Institutos",
+                "Centros Formación Profesional",
+                "Escuelas de Hostelería",
+                "Centros de Estudios",
+                "Agrícolas",
+                "Alimentación",
+                "Asesorías",
+                "Autoescuelas",
+                "Bodegas",
+                "Carnicas",
+                "Clinicas/Hospitales",
+                "Construcción",
+                "Consultoras",
+                "Distribuidores",
+                "Hostel y Hostales",
+                "Inmobiliarias",
+                "Laboratorios",
+                "Notarias",
+                "Pescados y mariscos",
+                "Quesos",
+                "Restauración",
+                "Restaurantes Gallegos",
+                "Agencias de viaje",
+                "Guías Turistícos"
+            ],
+            "style": {
+                "Ayuntamientos": null,
+                "Diputaciones": null,
+                "Xunta de Galicia": null,
+                "Organismos Colaboradores": null,
+                "Embajadas": null,
+                "Empresariales": null,
+                "Territoriales": null,
+                "Sectoriales": null,
+                "Denominaciones Origen": null,
+                "Indicación Geográfrica Protegida": null,
+                "Colegios Públicos": null,
+                "Colegios Concertados": null,
+                "Colegios Privados": null,
+                "Institutos": null,
+                "Centros Formación Profesional": null,
+                "Escuelas de Hostelería": null,
+                "Centros de Estudios": null,
+                "Agrícolas": null,
+                "Alimentación": null,
+                "Asesorías": null,
+                "Autoescuelas": null,
+                "Bodegas": null,
+                "Carnicas": null,
+                "Clinicas/Hospitales": null,
+                "Construcción": null,
+                "Consultoras": null,
+                "Distribuidores": null,
+                "Hostel y Hostales": null,
+                "Inmobiliarias": null,
+                "Laboratorios": null,
+                "Notarias": null,
+                "Pescados y mariscos": null,
+                "Quesos": null,
+                "Restauración": null,
+                "Restaurantes Gallegos": null,
+                "Agencias de viaje": null,
+                "Guías Turistícos": null
+            },
+            "default": "Ayuntamientos",
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cWeb": {
+            "type": "url",
+            "strip": true,
+            "isCustom": true
+        },
+        "cInstagram": {
+            "type": "varchar",
+            "maxLength": 100,
+            "copyToClipboard": true,
+            "options": [],
+            "isCustom": true
+        },
+        "cTieneInstagram": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "billingAddressPostalCode": {
+            "options": []
+        },
+        "name": {
+            "options": []
+        }
+    },
+    "links": {
+        "cPersonaDeContactos": {
+            "type": "hasMany",
+            "foreign": "account",
+            "entity": "CPersonaDeContacto",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

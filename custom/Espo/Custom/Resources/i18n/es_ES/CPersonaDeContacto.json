@@ -1,0 +1,17 @@
+{
+    "labels": {
+        "Create CPersonaDeContacto": "Crear Persona de contacto"
+    },
+    "fields": {
+        "cargo": "Cargo",
+        "telefonoFijo": "Telefono fijo",
+        "movil": "Movil",
+        "correo": "Correo",
+        "contact": "Contact",
+        "account": "Account"
+    },
+    "links": {
+        "contact": "Contact",
+        "account": "Account"
+    }
+}

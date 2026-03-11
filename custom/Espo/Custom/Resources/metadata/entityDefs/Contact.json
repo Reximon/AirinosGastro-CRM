@@ -1,0 +1,208 @@
+{
+    "fields": {
+        "cNombreComercial": {
+            "type": "varchar",
+            "required": false,
+            "maxLength": 100,
+            "copyToClipboard": true,
+            "options": [],
+            "isCustom": true
+        },
+        "cDenominacinSocial": {
+            "type": "varchar",
+            "maxLength": 255,
+            "copyToClipboard": true,
+            "options": [],
+            "isCustom": true
+        },
+        "cNIFCIF": {
+            "type": "varchar",
+            "maxLength": 10,
+            "default": "B00000000",
+            "options": [],
+            "isCustom": true
+        },
+        "cTipoDeEmpresa": {
+            "type": "enum",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "F",
+                "G"
+            ],
+            "style": {
+                "A": null,
+                "B": null,
+                "C": null,
+                "D": null,
+                "F": null,
+                "G": null
+            },
+            "default": "A",
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cCdigoPostal": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cPoblacin": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true
+        },
+        "cProvincia": {
+            "type": "varchar",
+            "maxLength": 155,
+            "options": [],
+            "isCustom": true
+        },
+        "cTipoDeVa": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Calle",
+                "Avenida",
+                "Plaza",
+                "Paseo",
+                "Carretera",
+                "Camino",
+                "Polígono",
+                "Otro"
+            ],
+            "style": {
+                "Calle": null,
+                "Avenida": null,
+                "Plaza": null,
+                "Paseo": null,
+                "Carretera": null,
+                "Camino": null,
+                "Polígono": null,
+                "Otro": null
+            },
+            "default": "Calle",
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cDomicilio": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 255,
+            "copyToClipboard": true,
+            "options": [],
+            "isCustom": true
+        },
+        "cNmero": {
+            "type": "varchar",
+            "required": false,
+            "maxLength": 50,
+            "options": [],
+            "isCustom": true
+        },
+        "cOtrosDatos": {
+            "type": "varchar",
+            "maxLength": 120,
+            "options": [],
+            "isCustom": true
+        },
+        "cSector": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Administración",
+                "Asociaciones",
+                "Educación",
+                "Empresas",
+                "Turismo",
+                "Particulares"
+            ],
+            "style": {
+                "Administración": null,
+                "Asociaciones": null,
+                "Educación": null,
+                "Empresas": null,
+                "Turismo": null,
+                "Particulares": null
+            },
+            "default": "Administración",
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cActividad": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cWeb": {
+            "type": "url",
+            "copyToClipboard": true,
+            "strip": true,
+            "isCustom": true
+        },
+        "cTieneInstagram": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
+        },
+        "cInstagram": {
+            "type": "varchar",
+            "maxLength": 100,
+            "copyToClipboard": true,
+            "options": [],
+            "isCustom": true
+        },
+        "firstName": {
+            "options": [],
+            "pattern": null,
+            "copyToClipboard": true
+        },
+        "cNombreDeCliente": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "addressPostalCode": {
+            "options": []
+        },
+        "lastName": {
+            "options": [],
+            "required": false,
+            "copyToClipboard": true,
+            "pattern": null
+        },
+        "name": {
+            "isPersonalData": false
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "emailAddress",
+            "addressPostalCode",
+            "cCdigoPostal"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "links": {
+        "cPersonaDeContactos": {
+            "type": "hasMany",
+            "foreign": "contact",
+            "entity": "CPersonaDeContacto",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

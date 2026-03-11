@@ -1,0 +1,74 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "cDenominacinSocial"
+                },
+                {
+                    "name": "cNIFCIF"
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber"
+                },
+                {
+                    "name": "emailAddress"
+                }
+            ],
+            [
+                {
+                    "name": "cCdigoPostal"
+                },
+                {
+                    "name": "cPoblacin"
+                },
+                {
+                    "name": "cProvincia"
+                }
+            ],
+            [
+                {
+                    "name": "cTipoDeEmpresa"
+                },
+                {
+                    "name": "cSector"
+                },
+                {
+                    "name": "cActividad"
+                }
+            ],
+            [
+                {
+                    "name": "cTipoDeVa"
+                },
+                {
+                    "name": "cDomicilio"
+                },
+                {
+                    "name": "cNumero"
+                },
+                {
+                    "name": "cOtrosDatos"
+                }
+            ],
+            [
+                {
+                    "name": "cWeb"
+                },
+                {
+                    "name": "cTieneInstagram"
+                },
+                {
+                    "name": "cInstagram"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "cWeb"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "cSector"
+                },
+                {
+                    "name": "cActividad"
+                }
+            ],
+            [
+                {
+                    "name": "cInstagram"
+                },
+                {
+                    "name": "cProvincia"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

@@ -1,0 +1,6 @@
+○ php8.3-fpm.service - The PHP 8.3 FastCGI Process Manager
+     Loaded: loaded (]8;;file://adoring-driscoll.217-154-186-53.plesk.page/usr/lib/systemd/system/php8.3-fpm.service/usr/lib/systemd/system/php8.3-fpm.service]8;;; [0;1;38;5;185mdisabled[0m; preset: [0;1;32menabled[0m)
+    Drop-In: /usr/lib/systemd/system/php8.3-fpm.service.d
+             └─]8;;file://adoring-driscoll.217-154-186-53.plesk.page/usr/lib/systemd/system/php8.3-fpm.service.d/limit_nofile.conflimit_nofile.conf]8;;
+     Active: inactive (dead)
+       Docs: ]8;;man:php-fpm8.3(8)man:php-fpm8.3(8)]8;;

@@ -1,0 +1,97 @@
+{
+    "labels": {
+        "Create Account": "Crear Empresa"
+    },
+    "fields": {
+        "cDenominacinSocial": "Denominación Social",
+        "cNIFCIF": "NIF/CIF",
+        "cTipoDeEmpresa": "Tipo de Empresa",
+        "cCdigoPostal": "Código Postal",
+        "cPoblacin": "Población",
+        "cProvincia": "Provincia",
+        "cTipoDeVa": "Tipo de Vía",
+        "cDomicilio": "Domicilio",
+        "cNumero": "Numero",
+        "cOtrosDatos": "Otros datos",
+        "cSector": "Sector",
+        "cActividad": "Actividad",
+        "cWeb": "Web",
+        "cInstagram": "Instagram",
+        "cTieneInstagram": "¿Tiene instagram?",
+        "billingAddressPostalCode": "Código Postal2",
+        "name": "Nombre Comercial",
+        "cPersonaDeContactos": "Persona De Contactos"
+    },
+    "options": {
+        "cTipoDeEmpresa": {
+            "A": "A",
+            "B": "B",
+            "C": "C",
+            "D": "D",
+            "F": "F",
+            "G": "G"
+        },
+        "cTipoDeVa": {
+            "Calle": "Calle",
+            "Vía": "Vía",
+            "Avenida": "Avenida",
+            "Plaza": "Plaza",
+            "Paseo": "Paseo",
+            "Carretera": "Carretera",
+            "Camino": "Camino",
+            "Polígono": "Polígono",
+            "Parque": "Parque",
+            "Otro": "Otro"
+        },
+        "cSector": {
+            "Administración": "Administración",
+            "Asociaciones": "Asociaciones",
+            "Empresas": "Empresas",
+            "Turismo": "Turismo",
+            "Particulares": "Particulares",
+            "Otros": "Otros"
+        },
+        "cActividad": {
+            "Ayuntamientos": "Ayuntamientos",
+            "Diputaciones": "Diputaciones",
+            "Xunta de Galicia": "Xunta de Galicia",
+            "Organismos Colaboradores": "Organismos Colaboradores",
+            "Embajadas": "Embajadas",
+            "Empresariales": "Empresariales",
+            "Territoriales": "Territoriales",
+            "Sectoriales": "Sectoriales",
+            "Denominaciones Origen": "Denominaciones Origen",
+            "Indicación Geográfrica Protegida": "Indicación Geográfrica Protegida",
+            "Colegios Públicos": "Colegios Públicos",
+            "Colegios Concertados": "Colegios Concertados",
+            "Colegios Privados": "Colegios Privados",
+            "Institutos": "Institutos",
+            "Centros Formación Profesional": "Centros Formación Profesional",
+            "Escuelas de Hostelería": "Escuelas de Hostelería",
+            "Centros de Estudios": "Centros de Estudios",
+            "Agrícolas": "Agrícolas",
+            "Alimentación": "Alimentación",
+            "Asesorías": "Asesorías",
+            "Autoescuelas": "Autoescuelas",
+            "Bodegas": "Bodegas",
+            "Carnicas": "Carnicas",
+            "Clinicas/Hospitales": "Clinicas/Hospitales",
+            "Construcción": "Construcción",
+            "Consultoras": "Consultoras",
+            "Distribuidores": "Distribuidores",
+            "Hostel y Hostales": "Hostel y Hostales",
+            "Inmobiliarias": "Inmobiliarias",
+            "Laboratorios": "Laboratorios",
+            "Notarias": "Notarias",
+            "Pescados y mariscos": "Pescados y mariscos",
+            "Quesos": "Quesos",
+            "Restauración": "Restauración",
+            "Restaurantes Gallegos": "Restaurantes Gallegos",
+            "Agencias de viaje": "Agencias de viaje",
+            "Guías Turistícos": "Guías Turistícos"
+        }
+    },
+    "links": {
+        "cPersonaDeContactos": "Persona De Contactos"
+    }
+}

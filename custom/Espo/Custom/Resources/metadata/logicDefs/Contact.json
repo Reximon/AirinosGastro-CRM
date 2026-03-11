@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "cInstagram": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isTrue",
+                        "attribute": "cTieneInstagram"
+                    }
+                ]
+            }
+        }
+    }
+}

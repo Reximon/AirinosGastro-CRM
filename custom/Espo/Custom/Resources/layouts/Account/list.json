@@ -1,0 +1,37 @@
+[
+    {
+        "name": "name",
+        "width": 50,
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "cTipoDeEmpresa",
+        "width": 6,
+        "align": "left"
+    },
+    {
+        "name": "cCdigoPostal",
+        "width": 16
+    },
+    {
+        "name": "phoneNumber",
+        "width": 16
+    },
+    {
+        "name": "emailAddress",
+        "width": 16
+    },
+    {
+        "name": "cProvincia",
+        "width": 16
+    },
+    {
+        "name": "cSector",
+        "width": 16
+    },
+    {
+        "name": "cActividad",
+        "width": 16
+    }
+]

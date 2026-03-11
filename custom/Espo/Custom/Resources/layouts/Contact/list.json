@@ -1,0 +1,36 @@
+[
+    {
+        "name": "firstName",
+        "width": 16
+    },
+    {
+        "name": "cTipoDeEmpresa",
+        "width": 16
+    },
+    {
+        "name": "cCdigoPostal",
+        "width": 16
+    },
+    {
+        "name": "phoneNumber",
+        "width": 18,
+        "notSortable": true
+    },
+    {
+        "name": "emailAddress",
+        "width": 20,
+        "notSortable": true
+    },
+    {
+        "name": "cPoblacin",
+        "width": 16
+    },
+    {
+        "name": "cSector",
+        "width": 16
+    },
+    {
+        "name": "cActividad",
+        "width": 16
+    }
+]

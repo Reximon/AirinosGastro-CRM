@@ -1,0 +1,32 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "cargo"
+                },
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                {
+                    "name": "movil"
+                },
+                {
+                    "name": "telefonoFijo"
+                }
+            ],
+            [
+                {
+                    "name": "correo"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]
