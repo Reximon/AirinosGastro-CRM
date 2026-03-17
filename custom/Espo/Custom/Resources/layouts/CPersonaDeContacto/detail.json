@@ -14,13 +14,8 @@
             ],
             [
                 {
-                    "name": "movil"
-                },
-                {
                     "name": "telefonoFijo"
-                }
-            ],
-            [
+                },
                 {
                     "name": "correo"
                 }

@@ -3,7 +3,7 @@
     "boolFilterList": [
         "onlyMy"
     ],
-    "iconClass": "fas fa-book-bookmark",
+    "iconClass": "fas fa-building-user",
     "relationshipPanels": {
         "contact": {
             "layout": null,
@@ -13,5 +13,7 @@
             "layout": null,
             "selectPrimaryFilterName": null
         }
-    }
+    },
+    "kanbanViewMode": false,
+    "color": "#b31010"
 }

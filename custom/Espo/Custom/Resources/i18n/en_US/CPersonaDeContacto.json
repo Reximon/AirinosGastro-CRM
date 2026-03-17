@@ -5,7 +5,8 @@
         "movil": "Movil",
         "correo": "Correo",
         "contact": "Contact",
-        "account": "Account"
+        "account": "Account",
+        "telefono": "Telefono"
     },
     "links": {
         "contact": "Contact",

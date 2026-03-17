@@ -42,15 +42,14 @@
             "isCustom": true
         },
         "telefonoFijo": {
-            "type": "number",
-            "len": 36,
-            "notNull": false,
-            "unique": false,
-            "nextNumber": 1,
-            "padLength": 5,
-            "copyToClipboard": true,
-            "prefix": "+34",
-            "isCustom": true
+            "type": "phone",
+            "typeList": [
+                "Office",
+                "Mobile",
+                "Fax",
+                "Other"
+            ],
+            "defaultType": "Office"
         },
         "movil": {
             "type": "number",
@@ -60,8 +59,7 @@
             "nextNumber": 1,
             "padLength": 10,
             "copyToClipboard": true,
-            "prefix": "+34",
-            "isCustom": true
+            "prefix": "+34"
         },
         "correo": {
             "type": "url",
@@ -74,6 +72,16 @@
         },
         "account": {
             "type": "link"
+        },
+        "telefono": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 1,
+            "padLength": 5,
+            "prefix": "+34",
+            "isCustom": true
         }
     },
     "links": {
@@ -112,7 +120,12 @@
     },
     "collection": {
         "orderBy": "createdAt",
-        "order": "desc"
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
     },
     "indexes": {
         "name": {
@@ -139,5 +152,6 @@
                 "id"
             ]
         }
-    }
+    },
+    "optimisticConcurrencyControl": false
 }
