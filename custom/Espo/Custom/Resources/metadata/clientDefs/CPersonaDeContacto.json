@@ -15,5 +15,6 @@
         }
     },
     "kanbanViewMode": false,
-    "color": "#b31010"
+    "color": "#b31010",
+"hideSide": true
 }

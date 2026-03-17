@@ -1,0 +1,10 @@
+.modal .side {
+    display: none !important;
+}
+.modal .main {
+    width: 100% !important;
+}
+
+.record-grid.record-grid-small {
+    display: block !important;
+}

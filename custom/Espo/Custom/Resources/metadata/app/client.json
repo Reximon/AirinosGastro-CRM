@@ -1,0 +1,8 @@
+{
+    "linkList": [
+        {
+            "href": "client/custom/css/custom.css",
+            "rel": "stylesheet"
+        }
+    ]
+}
