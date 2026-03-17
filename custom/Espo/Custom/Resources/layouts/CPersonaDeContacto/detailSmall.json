@@ -21,7 +21,13 @@
                 }
             ]
         ],
-        "style": "default",
-        "label": ""
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "noteText": null,
+        "customLabel": ""
     }
 ]
