@@ -9,8 +9,14 @@ if (strlen($cp) !== 5) {
     exit;
 }
 
-$url = "https://api.zippopotam.us/es/" . $cp;
-$response = @file_get_contents($url);
+$url = "https://nominatim.openstreetmap.org/search?postalcode=" . $cp . "&country=es&format=json&addressdetails=1";
+$opts = [
+    'http' => [
+        'header' => "User-Agent: AirinosGastroCRM/1.0\r\n"
+    ]
+];
+$context = stream_context_create($opts);
+$response = @file_get_contents($url, false, $context);
 
 if (!$response) {
     echo json_encode(['error' => 'No encontrado']);
@@ -19,10 +25,26 @@ if (!$response) {
 
 $data = json_decode($response, true);
 
-if (isset($data['places'][0])) {
+if (isset($data[0]['address'])) {
+    $address = $data[0]['address'];
+
+    // Población: ciudad, town, village o municipality
+    $poblacion = '';
+    foreach (['city', 'town', 'village', 'municipality', 'county'] as $key) {
+        if (!empty($address[$key])) {
+            $poblacion = $address[$key];
+            break;
+        }
+    }
+
+    // Provincia: state
+    $provincia = isset($address['state']) ? $address['state'] : '';
+    // Quitar "Comunidad de" para quedarnos solo con el nombre corto
+    $provincia = str_replace(['Comunidad de ', 'Comunidad Autónoma de ', 'Región de ', 'Principado de '], '', $provincia);
+
     echo json_encode([
-        'provincia' => $data['places'][0]['state'],
-        'poblacion' => $data['places'][0]['place name']
+        'provincia' => $provincia,
+        'poblacion' => $poblacion
     ]);
 } else {
     echo json_encode(['error' => 'No encontrado']);
