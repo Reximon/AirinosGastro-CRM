@@ -1,11 +1,14 @@
 {
     "kanbanViewMode": false,
-    "color": "#a4c5e0",
-    "iconClass": "fas fa-id-badge",
+    "color": "#edc755",
+    "iconClass": "fas fa-building",
     "relationshipPanels": {
         "personaDeContactos": {
             "layout": null,
             "selectPrimaryFilterName": null
         }
-    }
+    },
+    "additionalIncludes": [
+        "custom:cp-autocomplete"
+    ]
 }

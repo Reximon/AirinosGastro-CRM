@@ -4,5 +4,10 @@
             "href": "client/custom/css/custom.css",
             "rel": "stylesheet"
         }
+    ],
+    "scriptList": [
+        "client/custom/src/views/account/detail.js",
+        "client/custom/src/views/account/edit.js"
     ]
 }
+

@@ -4,7 +4,9 @@
         "order": "desc",
         "textFilterFields": [
             "name",
-            "emailAddress"
+            "emailAddress",
+            "cProvincia",
+            "cDenominacinSocial"
         ],
         "fullTextSearch": false,
         "countDisabled": false
