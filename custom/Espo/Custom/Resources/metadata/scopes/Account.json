@@ -7,8 +7,9 @@
     "preserveAuditLog": false,
     "duplicateCheckFieldList": [
         "name",
-        "emailAddress"
+        "emailAddress",
+        "phoneNumber"
     ],
     "collaborators": false,
-    "assignedUsers": false
+    "assignedUsers": true
 }

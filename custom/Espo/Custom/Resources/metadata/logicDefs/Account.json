@@ -9,6 +9,16 @@
                     }
                 ]
             }
+        },
+        "cLeSeguimos": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "isTrue",
+                        "attribute": "cTieneInstagram"
+                    }
+                ]
+            }
         }
     }
 }

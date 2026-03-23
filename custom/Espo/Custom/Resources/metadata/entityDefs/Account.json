@@ -6,7 +6,8 @@
             "name",
             "emailAddress",
             "cProvincia",
-            "cDenominacinSocial"
+            "cDenominacinSocial",
+            "cCdigoPostal"
         ],
         "fullTextSearch": false,
         "countDisabled": false
@@ -124,6 +125,7 @@
                 "Empresas",
                 "Turismo",
                 "Particulares",
+                "Para colocar",
                 "Otros"
             ],
             "style": {
@@ -132,9 +134,10 @@
                 "Empresas": null,
                 "Turismo": null,
                 "Particulares": null,
+                "Para colocar": null,
                 "Otros": null
             },
-            "default": "Administración",
+            "default": "Para colocar",
             "maxLength": 100,
             "isCustom": true
         },
@@ -177,7 +180,8 @@
                 "Restauración",
                 "Restaurantes Gallegos",
                 "Agencias de viaje",
-                "Guías Turistícos"
+                "Guías Turistícos",
+                "Tarjetas"
             ],
             "style": {
                 "Ayuntamientos": null,
@@ -216,7 +220,8 @@
                 "Restauración": null,
                 "Restaurantes Gallegos": null,
                 "Agencias de viaje": null,
-                "Guías Turistícos": null
+                "Guías Turistícos": null,
+                "Tarjetas": null
             },
             "default": "Ayuntamientos",
             "maxLength": 100,
@@ -244,6 +249,19 @@
         },
         "name": {
             "options": []
+        },
+        "assignedUsers": {
+            "type": "linkMultiple",
+            "view": "views/fields/assigned-users",
+            "maxCount": 10
+        },
+        "assignedUser": {
+            "disabled": true
+        },
+        "cLeSeguimos": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true
         }
     },
     "links": {
@@ -253,6 +271,15 @@
             "entity": "CPersonaDeContacto",
             "audited": false,
             "isCustom": true
+        },
+        "assignedUsers": {
+            "type": "hasMany",
+            "entity": "User",
+            "relationName": "entityUser",
+            "layoutRelationshipsDisabled": true
+        },
+        "assignedUser": {
+            "disabled": true
         }
     }
 }

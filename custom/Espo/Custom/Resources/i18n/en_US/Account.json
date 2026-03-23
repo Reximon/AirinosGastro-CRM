@@ -15,7 +15,8 @@
         "cWeb": "Web",
         "cInstagram": "Instagram",
         "cTieneInstagram": "¿Tiene instagram?",
-        "cPersonaDeContactos": "Persona De Contactos"
+        "cPersonaDeContactos": "Persona De Contactos",
+        "cLeSeguimos": "¿Le seguimos?"
     },
     "options": {
         "cTipoDeEmpresa": {
@@ -44,7 +45,8 @@
             "Empresas": "Empresas",
             "Turismo": "Turismo",
             "Particulares": "Particulares",
-            "Otros": "Otros"
+            "Otros": "Otros",
+            "Para colocar": "Para colocar"
         },
         "cActividad": {
             "Ayuntamientos": "Ayuntamientos",
@@ -83,7 +85,8 @@
             "Restauración": "Restauración",
             "Restaurantes Gallegos": "Restaurantes Gallegos",
             "Agencias de viaje": "Agencias de viaje",
-            "Guías Turistícos": "Guías Turistícos"
+            "Guías Turistícos": "Guías Turistícos",
+            "Tarjetas": "Tarjetas"
         }
     },
     "links": {

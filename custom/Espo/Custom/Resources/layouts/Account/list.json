@@ -11,15 +11,15 @@
         "align": "left"
     },
     {
-        "name": "cCdigoPostal",
-        "width": 16
-    },
-    {
         "name": "phoneNumber",
         "width": 16
     },
     {
         "name": "emailAddress",
+        "width": 16
+    },
+    {
+        "name": "cCdigoPostal",
         "width": 16
     },
     {

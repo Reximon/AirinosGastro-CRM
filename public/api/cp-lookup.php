@@ -42,9 +42,9 @@ if (isset($data[0]['address'])) {
     // Quitar "Comunidad de" para quedarnos solo con el nombre corto
     $provincia = str_replace(['Comunidad de ', 'Comunidad Autónoma de ', 'Región de ', 'Principado de '], '', $provincia);
 
-    echo json_encode([
+   echo json_encode([
         'provincia' => $provincia,
-        'poblacion' => $poblacion
+        'poblacion' => strtoupper($poblacion)
     ]);
 } else {
     echo json_encode(['error' => 'No encontrado']);
