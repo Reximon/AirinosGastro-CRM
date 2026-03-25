@@ -147,7 +147,8 @@
             "style": {},
             "default": null,
             "maxLength": 100,
-            "isCustom": true
+            "isCustom": true,
+            "view": "custom:views/fields/actividad-enum"
         },
         "cWeb": {
             "type": "url",

@@ -7,7 +7,7 @@
     ],
     "scriptList": [
         "client/custom/src/views/account/detail.js",
-        "client/custom/src/views/account/edit.js"
+        "client/custom/src/views/account/edit.js",
+        "client/custom/src/views/fields/actividad-enum.js"
     ]
 }
-
