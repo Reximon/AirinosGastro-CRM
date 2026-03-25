@@ -42,46 +42,35 @@
             "isCustom": true
         },
         "telefonoFijo": {
-            "type": "phone",
-            "typeList": [
-                "Office",
-                "Mobile",
-                "Fax",
-                "Other"
-            ],
-            "defaultType": "Office"
+            "type": "varchar",
+            "maxLength": 20,
+            "isCustom": true,
+            "options": []
         },
         "movil": {
-            "type": "number",
-            "len": 36,
-            "notNull": false,
-            "unique": false,
-            "nextNumber": 1,
-            "padLength": 10,
-            "copyToClipboard": true,
-            "prefix": "+34"
+            "type": "varchar",
+            "maxLength": 20,
+            "isCustom": true
+        },
+        "telefono": {
+            "type": "varchar",
+            "maxLength": 20,
+            "isCustom": true
         },
         "correo": {
-            "type": "url",
-            "copyToClipboard": true,
             "strip": true,
-            "isCustom": true
+            "isCustom": true,
+            "type": "varchar",
+            "maxLength": 100,
+            "pattern": "^[a-zA-Z0-9._%+\\\\-]+@[a-zA-Z0-9.\\\\-]+\\\\.[a-zA-Z]{2,}$",
+            "copyToClipboard": true,
+            "options": []
         },
         "contact": {
             "type": "link"
         },
         "account": {
             "type": "link"
-        },
-        "telefono": {
-            "type": "number",
-            "len": 36,
-            "notNull": false,
-            "unique": false,
-            "nextNumber": 1,
-            "padLength": 5,
-            "prefix": "+34",
-            "isCustom": true
         }
     },
     "links": {

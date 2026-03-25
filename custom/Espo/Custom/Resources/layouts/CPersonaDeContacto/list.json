@@ -14,5 +14,9 @@
     {
         "name": "telefonoFijo",
         "width": 16
+    },
+    {
+        "name": "correo",
+        "width": 16
     }
 ]

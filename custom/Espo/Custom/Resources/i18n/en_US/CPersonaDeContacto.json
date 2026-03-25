@@ -1,7 +1,7 @@
 {
     "fields": {
         "cargo": "Cargo",
-        "telefonoFijo": "Telefono fijo",
+        "telefonoFijo": "Telefono",
         "movil": "Movil",
         "correo": "Correo",
         "contact": "Contact",

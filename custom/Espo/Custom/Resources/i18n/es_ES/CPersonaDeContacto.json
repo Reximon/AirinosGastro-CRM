@@ -4,7 +4,7 @@
     },
     "fields": {
         "cargo": "Cargo",
-        "telefonoFijo": "Telefono fijo",
+        "telefonoFijo": "Telefono",
         "movil": "Movil",
         "correo": "Correo",
         "contact": "Contact",
@@ -14,5 +14,13 @@
     "links": {
         "contact": "Contact",
         "account": "Account"
+    },
+    "options": {
+        "telefonoFijo": {
+            "Office": "Oficina",
+            "Mobile": "Movil",
+            "Fax": "Fax",
+            "Other": "Otros"
+        }
     }
 }
