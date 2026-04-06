@@ -69,14 +69,14 @@ define('custom:views/account/edit', ['views/edit'], function (Dep) {
             };
 
             var $cp = self.$el.find('[data-name="cCdigoPostal"] input');
-            $cp.on('input', function () {
-                var val = $(this).val().replace(/\D/g, '');
-                if (val.length === 5) {
-                    checkCp(val);
-                } else {
-                    lastCp = null;
-                }
-            });
+            // Aplicar al cargar si ya hay CP
+$cp.on('input', function () {
+    var val = $(this).val().replace(/\D/g, '');
+    lastCp = null;
+    if (val.length === 5) {
+        checkCp(val);
+    }
+});
         }
     });
 });

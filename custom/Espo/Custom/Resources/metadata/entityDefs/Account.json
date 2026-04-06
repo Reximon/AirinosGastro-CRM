@@ -58,6 +58,7 @@
         "cCdigoPostal": {
             "type": "varchar",
             "maxLength": 5,
+    "view": "custom:views/fields/cp-autocomplete",
             "options": [],
             "isCustom": true
         },
