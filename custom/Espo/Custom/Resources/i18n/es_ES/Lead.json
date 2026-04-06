@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "accountName": "Nombre de la empresa",
+        "title": "Cargo",
+        "cActividad": "Actividad"
+    },
+    "options": {
+        "cActividad": []
+    }
+}

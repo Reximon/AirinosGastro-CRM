@@ -2,14 +2,16 @@
     "collection": {
         "orderBy": "createdAt",
         "order": "desc",
+        "textFilterContains": true,
         "textFilterFields": [
             "name",
             "emailAddress",
             "cProvincia",
             "cDenominacinSocial",
-            "cCdigoPostal"
+            "cCdigoPostal",
+            "phoneNumber"
         ],
-        "fullTextSearch": false,
+        "fullTextSearch": true,
         "countDisabled": false
     },
     "optimisticConcurrencyControl": true,
@@ -20,6 +22,9 @@
             "copyToClipboard": true,
             "options": [],
             "isCustom": true
+        },
+        "name": {
+            "textFilterContains": true
         },
         "cNIFCIF": {
             "type": "varchar",
@@ -80,6 +85,10 @@
                 "Camino",
                 "Polígono",
                 "Parque",
+                "Pareje",
+                "Pasaje",
+                "Ronda",
+                "Travesía",
                 "Otro"
             ],
             "style": {
@@ -92,6 +101,10 @@
                 "Camino": null,
                 "Polígono": null,
                 "Parque": null,
+                "Pareje": null,
+                "Pasaje": null,
+                "Ronda": null,
+                "Travesía": null,
                 "Otro": null
             },
             "default": "Calle",
@@ -144,7 +157,7 @@
         "cActividad": {
             "type": "enum",
             "options": null,
-            "style": {},
+            "style": [],
             "default": null,
             "maxLength": 100,
             "isCustom": true,
@@ -168,9 +181,6 @@
             "isCustom": true
         },
         "billingAddressPostalCode": {
-            "options": []
-        },
-        "name": {
             "options": []
         },
         "assignedUsers": {

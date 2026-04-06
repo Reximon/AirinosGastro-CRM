@@ -4,20 +4,37 @@
             [
                 {
                     "name": "name"
+                },
+                {
+                    "name": "cDenominacinSocial"
+                },
+                {
+                    "name": "cNIFCIF"
                 }
             ],
             [
-                {
-                    "name": "emailAddress"
-                },
-                {
-                    "name": "cWeb"
-                },
                 {
                     "name": "phoneNumber"
+                },
+                {
+                    "name": "emailAddress"
                 }
             ],
             [
+                {
+                    "name": "cCdigoPostal"
+                },
+                {
+                    "name": "cPoblacin"
+                },
+                {
+                    "name": "cProvincia"
+                }
+            ],
+            [
+                {
+                    "name": "cTipoDeEmpresa"
+                },
                 {
                     "name": "cSector"
                 },
@@ -27,10 +44,30 @@
             ],
             [
                 {
+                    "name": "cTipoDeVa"
+                },
+                {
+                    "name": "cDomicilio"
+                },
+                {
+                    "name": "cNumero"
+                },
+                {
+                    "name": "cOtrosDatos"
+                }
+            ],
+            [
+                {
+                    "name": "cWeb"
+                },
+                {
+                    "name": "cTieneInstagram"
+                },
+                {
                     "name": "cInstagram"
                 },
                 {
-                    "name": "cProvincia"
+                    "name": "cLeSeguimos"
                 }
             ]
         ],

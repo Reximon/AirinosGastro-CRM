@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "accountName": {
+            "options": []
+        },
+        "title": {
+            "options": []
+        },
+        "industry": {
+            "optionsReference": "Account.cSector",
+            "default": "Administración"
+        },
+        "cActividad": {
+            "type": "enum",
+            "style": {},
+            "maxLength": 100,
+            "isCustom": true
+        }
+    }
+}

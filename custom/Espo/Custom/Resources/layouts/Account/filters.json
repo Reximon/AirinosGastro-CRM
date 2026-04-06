@@ -1,8 +1,7 @@
 [
-    "cActividad",
+    "name",
     "cSector",
-    "cProvincia",
+    "cCdigoPostal",
     "emailAddress",
-    "phoneNumber",
-    "billingAddressCountry"
+    "phoneNumber"
 ]

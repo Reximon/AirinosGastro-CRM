@@ -5,51 +5,73 @@
                 {
                     "name": "name"
                 },
-                false
-            ],
-            [
                 {
-                    "name": "website"
+                    "name": "cDenominacinSocial"
                 },
                 {
-                    "name": "phoneNumber"
+                    "name": "cNIFCIF"
                 }
             ],
             [
                 {
-                    "name": "emailAddress"
+                    "name": "phoneNumber"
                 },
-                false
+                {
+                    "name": "emailAddress"
+                }
             ],
             [
                 {
-                    "name": "billingAddress"
+                    "name": "cCdigoPostal"
                 },
                 {
-                    "name": "shippingAddress"
+                    "name": "cPoblacin"
+                },
+                {
+                    "name": "cProvincia"
+                }
+            ],
+            [
+                {
+                    "name": "cTipoDeEmpresa"
+                },
+                {
+                    "name": "cSector"
+                },
+                {
+                    "name": "cActividad"
+                }
+            ],
+            [
+                {
+                    "name": "cTipoDeVa"
+                },
+                {
+                    "name": "cDomicilio"
+                },
+                {
+                    "name": "cNumero"
+                },
+                {
+                    "name": "cOtrosDatos"
+                }
+            ],
+            [
+                {
+                    "name": "cWeb"
+                },
+                {
+                    "name": "cTieneInstagram"
+                },
+                {
+                    "name": "cInstagram"
+                },
+                {
+                    "name": "cLeSeguimos"
                 }
             ]
         ],
         "style": "default",
         "label": "Overview"
-    },
-    {
-        "rows": [
-            [
-                {
-                    "name": "type"
-                },
-                {
-                    "name": "industry"
-                }
-            ],
-            [
-                {
-                    "name": "description"
-                }
-            ]
-        ],
-        "style": "default",
-        "label": "Details"
     }
 ]

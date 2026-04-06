@@ -42,7 +42,11 @@
             "Camino": "Camino",
             "Polígono": "Polígono",
             "Parque": "Parque",
-            "Otro": "Otro"
+            "Otro": "Otro",
+            "Pareje": "Pareje",
+            "Pasaje": "Pasaje",
+            "Ronda": "Ronda",
+            "Travesía": "Travesía"
         },
         "cSector": {
             "Administración": "Administración",

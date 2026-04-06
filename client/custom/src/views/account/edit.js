@@ -6,7 +6,7 @@ define('custom:views/account/edit', ['views/edit'], function (Dep) {
             'Asociaciones': ['Empresariales', 'Territoriales', 'Sectoriales', 'Denominaciones de Origen', 'Indicación Geográfica Protegida', 'Hostelería'],
             'Educación': ['Colegios Públicos', 'Colegios Concertados', 'Colegios Privados', 'Institutos', 'Centros de Formación Profesional', 'Escuelas de Hostelería', 'Centros de estudios / Academias'],
             'Hostelería': ['Restaurantes', 'Catering', 'Comedores colectivos', 'Restaurantes gallegos', 'Bar', 'Cafetería'],
-            'Turismo': ['Agencias de viaje', 'Guías turísticos', 'Agencias de recepción', 'Agencias emisoras'],
+            'Turismo': ['Agencias de viaje', 'Guías turísticos', 'Agencias clientes', 'Agencias potenciales'],
 	    'Empresas': ['Agrícolas', 'Alimentación', 'Asesorías', 'Autoescuelas', 'Automoción', 'Bodegas', 'Cárnicas', 'Clínicas / Hospitales', 'Construcción', 'Consultoras', 'Distribuidores', 'Hoteles y Hostales', 'Inmobiliarias', 'Laboratorios', 'Notarías', 'Pescados y mariscos', 'Quesos'],
 	    'Para colocar': ['Tarjetas', 'Motor de reservas']
         },
