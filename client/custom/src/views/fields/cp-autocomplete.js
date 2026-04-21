@@ -12,7 +12,7 @@ define('custom:views/fields/cp-autocomplete', ['views/fields/varchar'], function
             $cp.on('input', function () {
                 var val = $(this).val().replace(/\D/g, '');
                 lastCp = null;
-                if (val.length === 5) {
+                if (val.length === 5 || val.length === 7) {
                     fetch('/api/cp-lookup.php?cp=' + val)
                         .then(function (r) { return r.json(); })
                         .then(function (data) {

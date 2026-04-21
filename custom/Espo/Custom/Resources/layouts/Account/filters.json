@@ -3,5 +3,7 @@
     "cSector",
     "cCdigoPostal",
     "emailAddress",
+    "cPoblacin",
+    "cProvincia",
     "phoneNumber"
 ]

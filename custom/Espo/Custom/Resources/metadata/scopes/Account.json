@@ -1,12 +1,11 @@
 {
     "stream": true,
     "disabled": false,
-    "statusField": null,
+    "statusField": "cActividad",
     "kanbanStatusIgnoreList": null,
     "stars": true,
     "preserveAuditLog": false,
     "duplicateCheckFieldList": [
-        "name",
         "emailAddress",
         "phoneNumber"
     ],
