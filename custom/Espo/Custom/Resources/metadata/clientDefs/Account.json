@@ -11,5 +11,10 @@
     "views": {
         "detail": "custom:views/account/detail",
         "edit": "custom:views/account/edit"
+    },
+    "fieldDefs": {
+        "cActividad": {
+            "searchView": "views/fields/enum"
+        }
     }
 }
