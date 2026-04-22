@@ -114,7 +114,15 @@
             "Agencias clientes": "Agencias clientes",
             "Agencias potenciales": "Agencias potenciales",
             "Motor de reservas": "Motor de reservas",
-            "": ""
+            "": "",
+            "Agencias de viajes": "Agencias de viajes",
+            "Culturales": "Culturales",
+            "Automoción": "Automoción",
+            "Cárnicas": "Cárnicas",
+            "Clínicas / Hospitales": "Clínicas / Hospitales",
+            "Hoteles y Hostales": "Hoteles y Hostales",
+            "Notarías": "Notarías",
+            "Pescados y Mariscos": "Pescados y Mariscos"
         }
     },
     "links": {
