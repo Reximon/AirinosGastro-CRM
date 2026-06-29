@@ -4702,8 +4702,7 @@ define("view-helper", ["exports", "marked", "dompurify", "handlebars"], function
      * @returns {string}
      */
     stripEventHandlersInHtml(html) {
-      let j; // @todo Revise.
-
+      let j;
       function stripHTML() {
         html = html.slice(0, strip) + html.slice(j);
         j = strip;
@@ -4717,7 +4716,7 @@ define("view-helper", ["exports", "marked", "dompurify", "handlebars"], function
       for (let i = 0; i < html.length; i++) {
         if (html[i] === '<' && html[i + 1] && isValidTagChar(html[i + 1])) {
           i++;
-          for (let j = i; j < html.length; j++) {
+          for (j = i; j < html.length; j++) {
             if (!lastQuote && html[j] === '>') {
               if (strip) {
                 stripHTML();
@@ -4734,10 +4733,10 @@ define("view-helper", ["exports", "marked", "dompurify", "handlebars"], function
             if (!lastQuote && html[j - 1] === "=" && (html[j] === "'" || html[j] === '"')) {
               lastQuote = html[j];
             }
-            if (!lastQuote && html[j - 2] === " " && html[j - 1] === "o" && html[j] === "n") {
+            if (!lastQuote && (html[j - 2] === " " || html[j - 2] === "/") && html[j - 1] === "o" && html[j] === "n") {
               strip = j - 2;
             }
-            if (strip && html[j] === " " && !lastQuote) {
+            if (strip !== false && html[j] === " " && !lastQuote) {
               stripHTML();
             }
           }
@@ -60714,6 +60713,7 @@ define("views/fields/person-name", ["exports", "views/fields/varchar", "ui/selec
     }
     setup() {
       super.setup();
+      this.searchTypeList = this.searchTypeList.filter(it => !['anyOf', 'noneOf'].includes(it));
       const ucName = Espo.Utils.upperCaseFirst(this.name);
       this.salutationField = 'salutation' + ucName;
       this.firstField = 'first' + ucName;
@@ -60826,6 +60826,19 @@ define("views/fields/person-name", ["exports", "views/fields/varchar", "ui/selec
         middle: data[this.middleField]
       });
       return data;
+    }
+    fetchSearch() {
+      if (this.fetchSearchType() === 'isNotEmpty') {
+        return {
+          type: 'isNotNull',
+          attribute: this.name,
+          value: null,
+          data: {
+            type: 'isNotEmpty'
+          }
+        };
+      }
+      return super.fetchSearch();
     }
 
     /**
@@ -62694,7 +62707,7 @@ define("views/fields/link-multiple-with-columns", ["exports", "views/fields/link
       // Do not use the `html` method to avoid XSS.
 
       const $container = this.$el.find('.link-container');
-      const $el = $('<div>').addClass('form-inline clearfix').addClass('list-group-item link-with-role link-group-item-with-columns').addClass('link-' + id);
+      const $el = $('<div>').addClass('form-inline clearfix').addClass('list-group-item link-with-role link-group-item-with-columns').addClass('link-' + id).attr('data-id', id);
       const $remove = $('<a>').attr('role', 'button').attr('tabindex', '0').attr('data-id', id).attr('data-action', 'clearLink').addClass('pull-right').append($('<span>').addClass('fas fa-times'));
       const $name = $('<div>').addClass('link-item-name').text(name).append('&nbsp;');
       const $columnList = [];
@@ -70220,7 +70233,9 @@ define("views/list-related", ["exports", "views/main", "search-manager", "helper
       }
       this.wait(this.getHelper().processSetupHandlers(this, 'list'));
       this.addActionHandler('fullRefresh', () => this.actionFullRefresh());
-      this.addActionHandler('removeRelated', () => this.actionRemoveRelated());
+      this.addActionHandler('removeRelated', (e, target) => this.actionRemoveRelated({
+        id: target.dataset.id
+      }));
     }
 
     /**
@@ -86956,7 +86971,8 @@ define("views/note/fields/users", ["exports", "views/fields/link-multiple"], fun
       const avatarHtml = this.getHelper().getAvatarHtml(id, 'small', 18, 'avatar-link');
       if (avatarHtml) {
         const img = new DOMParser().parseFromString(avatarHtml, 'text/html').body.childNodes[0];
-        itemElement.prepend(img);
+        const textElement = itemElement.querySelector('.text');
+        textElement === null || textElement === void 0 || textElement.prepend(img);
       }
       return itemElement;
     }
